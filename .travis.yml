@@ -1,0 +1,18 @@
+language: ruby
+sudo: false
+
+cache:
+  directories:
+    - vendor/bundle
+
+addons:
+  chrome: stable
+
+bundler_args: --without test --jobs 3 --retry 3
+before_install:
+  - "rm ${BUNDLE_GEMFILE}.lock"
+  - "travis_retry gem update --system"
+  - "travis_retry gem install bundler"
+
+rvm:
+  - 2.5.1

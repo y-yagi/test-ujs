@@ -1,0 +1,11 @@
+load_paths:
+  - lib/assets/compiled
+
+logical_paths:
+  - rails-ujs.js
+
+build:
+  logical_paths:
+    - rails-ujs.js
+  path: lib/assets/compiled
+  clean: true
