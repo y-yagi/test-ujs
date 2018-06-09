@@ -11,6 +11,7 @@ namespace :test do
   desc "Run tests for rails-ujs"
   task :ujs do
     begin
+      FileUtils.rm_rf("log")
       Dir.mkdir("log")
       pid = spawn("bundle exec rackup test/ujs/config.ru -p 4567 -s puma > log/test.log 2>&1", pgroup: true)
 
