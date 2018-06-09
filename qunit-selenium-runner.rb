@@ -3,7 +3,7 @@
 require "qunit/selenium/test_runner"
 require "chromedriver/helper"
 
-system("chromedriver --help")
+system("chromedriver")
 puts "chromer driver version: #{Chromedriver::Helper.new.current_version}"
 
 driver_options = Selenium::WebDriver::Chrome::Options.new
