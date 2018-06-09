@@ -3,8 +3,7 @@
 require "qunit/selenium/test_runner"
 require "chromedriver/helper"
 
-system("chromedriver")
-puts "chromer driver version: #{Chromedriver::Helper.new.current_version}"
+spawn("chromedriver")
 
 driver_options = Selenium::WebDriver::Chrome::Options.new
 driver_options.add_argument("--headless")
