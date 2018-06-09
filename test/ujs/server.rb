@@ -82,8 +82,6 @@ class TestsController < ActionController::Base
   end
 end
 
-p "Blade.initialize!"
-p Blade.initialize!
+Blade.initialize!
 
-p "UJS::Server.initialize!"
-p UJS::Server.initialize!
+UJS::Server.initialize!
