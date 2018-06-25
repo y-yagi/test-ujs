@@ -13,7 +13,7 @@ before_install:
   - "rm ${BUNDLE_GEMFILE}.lock"
   - "travis_retry gem update --system"
   - "travis_retry gem install bundler"
-  - "nvm install v10.3.0"
+  - "nvm install node"
   - "node --version"
   - "npm install"
 
