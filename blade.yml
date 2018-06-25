@@ -1,5 +1,6 @@
 load_paths:
-  - lib/assets/compiled
+  - app/assets/javascripts
+  # - lib/assets/compiled
 
 logical_paths:
   - rails-ujs.js

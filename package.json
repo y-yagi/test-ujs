@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "bundle exec blade build",
+    "test": "echo \"See the README: https://github.com/rails/rails/blob/master/actionview/app/assets/javascripts#how-to-run-tests\" && exit 1",
+    "lint": "eslint test/ujs/public/test"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.15.7",
+    "eslint": "^2.13.1"
+  }
+}
